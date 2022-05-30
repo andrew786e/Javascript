@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width, initial-scale = 1">
+    <title>DOM Examples</title>
+</head>
+<body>
+    <p>DOM Examples</p>
+    <div id = "special">
+        <p class = "someclass">Here is one paragraph</p>
+        <p>Here is another paragraoh</p>
+        <p class = "someclass">Here is one more paragraoh nsjn</p>
+    </div>
+    <script>
+        // Only returns the first element that matches the criteria 
+        var myText = document.querySelectorAll('#special p') ;
+
+        for(var i = 0 ; i < myText.length ; i++){
+            console.log(i) ;
+            myText[i].style.color = "red" ;
+        }
+        
+
+        // Useful Element Properties to remember
+        // .style.property 
+        // innnerHTML 
+        // classNmae 
+
+        // Useful Element Methods 
+        // setAttribute("attributename, value")
+
+    </script>
+</body>
+</html>

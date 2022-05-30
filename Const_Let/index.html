@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width">
+    <title>Scope</title>
+</head>
+<body>
+    <h1>Testing Scope in Javascript</h1>
+
+    <p>Here is another paragraph thanks</p>
+    <p>Here is another paragraph thanks 12</p>
+    <p>Here is another paragraph thanks 12 13 </p>
+
+    <script>
+
+        // Const doesnt allow you to change variable 
+        const cheese = "yummy"
+
+        
+        // Let is a block level scope
+
+        for(let i = 0 ; i < 3 ; i++){
+            console.log(i) ;
+        }
+
+        console.log(`the value of i is ${i}`)
+
+    </script>
+</body>
+</html>

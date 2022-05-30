@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width, initial-scale = 1">
+    <title>DOM Examples</title>
+    <style>
+        .blue{
+            color : blue;
+        }
+
+    </style>
+</head>
+<body>
+    <p>DOM Examples</p>
+    <div id = "special">
+        <p class = "someclass">Here is one paragraph</p>
+        <p>Here is another paragraoh</p>
+        <p class = "someclass">Here is one more paragraoh nsjn</p>
+    </div>
+
+    <form>
+        <label><input type = "checkbox"> YES!</label>
+    </form>
+    <script>
+        // Only returns the first element that matches the criteria 
+        var myText = document.querySelector('p') ;
+        myText.className = "blue" ;
+
+        var myCheckbox = document.querySelector('input') ;
+        myCheckbox.setAttribute('checked', 'checked') ;
+    </script> 
+</body>
+</html>

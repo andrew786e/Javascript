@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width">
+    <title>Scope</title>
+</head>
+<body>
+    <h1>Testing Scope in Javascript</h1>
+
+    <p>Here is another paragraph thanks</p>
+    <p>Here is another paragraph thanks 12</p>
+    <p>Here is another paragraph thanks 12 13 </p>
+
+    <script>
+
+        // Use strict prevents users from forgetting to type the var keyword 
+
+        (function(){
+
+            "use strict" 
+            
+            var myPs = document.querySelectorAll('p') ;
+
+            for(var i = 0 ; i < myPs.length ; i++){
+                myPs[i].style.color = "red" ;
+
+            }
+        }()) ;
+    </script>
+</body>
+</html>

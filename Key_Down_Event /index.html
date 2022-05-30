@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width, initial-scale = 1">
+    <title>Event Basics</title>
+    <style>
+
+        div {
+            width: 50px ;
+            height: 50px ;
+            background-color: red ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Check whether a key was pressed </h1>
+
+    <div></div>
+
+    <script>
+        document.addEventListener('keydown',function(event){
+            alert(`the key that was pressed is ${event.key}`) ;
+        })
+    </script>
+
+
+</html>

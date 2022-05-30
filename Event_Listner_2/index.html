@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width, initial-scale = 1">
+    <title>Event Basics</title>
+</head>
+<body>
+    <h1>Javascript Events</h1>
+    <button>Don't Press Me</button>
+    <script>
+        var btn = document.querySelector('button') ;
+
+        function ouch(){
+            alert("oh no you didn't") ;
+        }
+
+       
+        // btn.addEventListener('click',ouch) ;
+
+        btn.addEventListener('click', function(){
+            alert("oh no you didnt") ;
+        })
+
+
+    </script>
+</body>
+</html>
